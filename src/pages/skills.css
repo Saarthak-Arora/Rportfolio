@@ -1,0 +1,26 @@
+.he{
+   
+    /* margin: auto; */
+    font-size: 52px;
+    font-weight: bold;
+    margin-left: 50%;
+}
+.skills{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    position: relative;
+    margin: auto;
+    
+}
+.skills img{
+    width: 100px;
+    height: 100px;
+    margin: 50px;
+}
+
+.skills img:hover{
+   box-shadow: 4px 5px 6px 7px orange;
+}

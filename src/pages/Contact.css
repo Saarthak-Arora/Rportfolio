@@ -1,0 +1,99 @@
+.contain{
+    /* position: absolute; */
+    margin: auto;
+    width: 60%;
+    height: 80%;
+    background-color: #ffa500;
+    margin-top: 4%;
+    display: flex;
+}
+
+.cwrapper{
+    background-color: yellow; 
+    flex: 1;
+    
+}
+.cwrapper form{
+    display: flex;
+    flex-direction: column;
+   padding: 4%;
+}
+
+.cwrapper form input{
+    width: 400px;
+    height: 40px;
+    justify-content: start;
+    margin-bottom: 4%;
+}
+.cwrapper form textarea{
+    height: 100px;
+    width: 400px;
+    margin-bottom: 4%;
+}
+
+button{
+    height: 50px;
+    width: 100px;
+    background-color: orange;
+}
+
+
+.right{
+   flex:1;
+    /* transform: rotateY(-90deg); */
+}
+.rwrapper {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+/* .sicon{
+   font-size: 600px;
+} */
+
+.rwrapper img{
+    height: 70vh;
+}
+
+.soicon{
+    margin-top: 4px;
+    padding: 4px;
+    font-size: 50px;
+    font-weight: bold;
+    display: flex;
+    /* background-color: aliceblue; */
+    justify-content: center;
+}
+
+@media only screen and (max-width: 700px) {
+.contain{
+    flex-direction: column;
+    margin-left:12% ;
+   
+}
+.cwrapper{
+    width: 100%;
+}
+.cwrapper form input{
+    width: 200px;
+    height: 30px;
+    justify-content: start;
+    margin-bottom: 4%;
+}
+.cwrapper form textarea{
+    height: 100px;
+    width: 200px;
+    margin-bottom: 4%;
+}
+.rwrapper img{
+    height: 40vh;
+}
+
+.rwrapper {
+    margin:0 ;
+}
+  }
