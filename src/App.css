@@ -1,6 +1,12 @@
+ @import url('https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap'); 
 body{
     /* background-image:url("26368.jpg") ; */
-background-color: khaki;
+ /* background: linear-gradient(to bottom right, #F6D365, #FDA085); */
+ background-color: azure;
+font-family: 'Hind Madurai', sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 /* background: #c0c0aa;  fallback for old browsers */
 /* background: -webkit-linear-gradient(to right, #1cefff, #c0c0aa);  /* Chrome 10-25, Safari 5.1-6 */
 /* background: linear-gradient(to right, #1cefff, #c0c0aa); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 

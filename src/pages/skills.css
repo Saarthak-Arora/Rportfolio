@@ -1,26 +1,83 @@
-.he{
-   
-    /* margin: auto; */
-    font-size: 52px;
-    font-weight: bold;
-    margin-left: 50%;
-}
-.skills{
-    width: 60%;
+.container{
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    position: relative;
     margin: auto;
+    /* background-color: aqua; */
+    width: 60vw;
     
+}
+.left{
+    flex: 1;
+    /* background-color: aliceblue; */
+    
+}
+.right{
+    flex:1;
+    /* background-color: black; */
+}
+
+.skills{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 .skills img{
     width: 100px;
     height: 100px;
-    margin: 50px;
+    margin: 20px;
 }
 
 .skills img:hover{
    box-shadow: 4px 5px 6px 7px orange;
 }
+
+.stimg{
+    min-height: 100px; 
+    animation: disp 12s ease-in-out infinite alternate ;
+    
+}
+
+
+@keyframes disp {
+    20%{transform: translateX(-50px);}
+    75%{transform: translateX(50px);}
+    100%{height: 200px;}
+
+}
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 1311px) {
+    .container{
+        flex-direction: column;
+        left: 0;
+        position: absolute;
+    
+    }
+    .stimg{
+        width: 300px;
+        min-height: 300px; 
+        animation: disp 12s ease-in-out infinite alternate ;
+        
+    }
+    @keyframes disp {
+        20%{transform: translateX(-10px);}
+        75%{transform: translateX(10px);}
+        100%{height: 100px;}
+    
+    }
+  
+    .right{
+        width: 100vw;
+    }
+    
+    
+    
+
+    .skills img{
+        width: 300px;
+        height: 300px;
+    }
+}
+

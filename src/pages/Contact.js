@@ -1,10 +1,12 @@
-import React,{useState} from 'react';
+import React,{useState,useRef} from 'react';
+import emailjs from '@emailjs/browser';
 import './Contact.css'
-import {FaPrayingHands} from 'react-icons/fa'
+
 import {AiFillGithub,AiFillLinkedin} from "react-icons/ai/index";
 
 const Contact = () => {
-    
+    const form = useRef();
+
     const [udetails, setudetails] = useState({
         uname : '',
         email : '',
@@ -22,17 +24,29 @@ const Contact = () => {
         setudetails(udetails => ({...udetails,[name] : value}));
 
     }
-const handleSubmit = (e) =>{
+  const handleSubmit = (e) =>{
     e.preventDefault();
 
-    console.log(udetails);
-}
+    // console.log(udetails);
+
+    emailjs.sendForm('service_fm625yh', 'template_37vita9', form.current, 'V_1SH95GpBTTJ9bET')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      
+      setudetails({uname : '',
+      email : '',
+      phone :  91,
+      message : ''})
+};
   return (
    
     <>
     <div className='contain'>
         <div className='cwrapper'>
-            <form action="" onSubmit={handleSubmit}>
+            <form ref={form} onSubmit={handleSubmit}>
                 <label htmlFor="uname">Your Name</label>
                 <input name='uname' type={'text'} id='uname' value={udetails.uname} onChange={handleChange}/>
                 
@@ -45,7 +59,7 @@ const handleSubmit = (e) =>{
                 <label htmlFor="mess">Your Message</label>
                 <textarea id='mess' name='message' value={udetails.message} onChange={handleChange}/>
              <div>  
-              <button type='submit' >Submit</button>
+              <button type='submit' value="Send">Submit</button>
             </div> 
             <div className='soicon'>
             <a target={'_blank'} href={'https://github.com/Saarthak-Arora'}> <AiFillGithub/></a>

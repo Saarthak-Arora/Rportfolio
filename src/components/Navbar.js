@@ -19,6 +19,7 @@ const Navbar = () => {
     }
   return (
     <>
+     <span className="logomobile" onClick={()=>{SetActive(!active)}}>SA</span>
     <div className={active ? 'header' : 'header-mobile'}>
     <span className="logo">SA</span>
     <div className='menu-icon' onClick={activateNav}>

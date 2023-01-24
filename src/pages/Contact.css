@@ -1,5 +1,4 @@
 .contain{
-    /* position: absolute; */
     margin: auto;
     width: 60%;
     height: 80%;
@@ -16,7 +15,7 @@
 .cwrapper form{
     display: flex;
     flex-direction: column;
-   padding: 4%;
+    padding: 4%;
 }
 
 .cwrapper form input{
@@ -31,11 +30,7 @@
     margin-bottom: 4%;
 }
 
-button{
-    height: 50px;
-    width: 100px;
-    background-color: orange;
-}
+
 
 
 .right{
@@ -43,12 +38,10 @@ button{
     /* transform: rotateY(-90deg); */
 }
 .rwrapper {
-    position: absolute;
+    /* position: absolute; */
     width: 400px;
     height: 400px;
-    display: flex;
-    /* align-items: center;
-    justify-content: center; */
+    /* display: flex; */
 }
 
 /* .sicon{
@@ -57,6 +50,7 @@ button{
 
 .rwrapper img{
     height: 70vh;
+    position: relative;
 }
 
 .soicon{
@@ -65,35 +59,48 @@ button{
     font-size: 50px;
     font-weight: bold;
     display: flex;
-    /* background-color: aliceblue; */
     justify-content: center;
-}
-
-@media only screen and (max-width: 700px) {
-.contain{
-    flex-direction: column;
-    margin-left:12% ;
    
 }
-.cwrapper{
-    width: 100%;
-}
-.cwrapper form input{
-    width: 200px;
-    height: 30px;
-    justify-content: start;
-    margin-bottom: 4%;
-}
-.cwrapper form textarea{
-    height: 100px;
-    width: 200px;
-    margin-bottom: 4%;
-}
-.rwrapper img{
-    height: 40vh;
-}
 
-.rwrapper {
-    margin:0 ;
-}
-  }
+@media only screen and (max-width: 1311px) {
+    .contain{
+        width: 100%;
+        flex-direction: column;
+        position: absolute;
+    }
+
+    .cwrapper{
+       width: 100%;
+       /* position: absolute; */
+    }
+    .cwrapper form{
+        font-size: 36px;
+    }
+
+
+    .cwrapper form input{
+        width: 100%;
+        height: 50px;
+        justify-content: start;
+        margin-bottom: 4%;
+    }
+
+    .cwrapper form textarea{
+        height: 150px;
+        width: 100%;
+        margin-bottom: 4%;
+    }
+
+    .right{
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .rwrapper{
+        height:100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+ }
