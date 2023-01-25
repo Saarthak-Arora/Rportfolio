@@ -25,11 +25,60 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>SaarthakAora</title>
+    <style>
+      body{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+    .loder-wrapper{
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top:0;
+        left:0;
+        background-color: black;
+        display: grid;
+        place-content: center;
+      }
+  .llogo {
+  height: 100px;
+  width: 100px;
+  font-size: 30px;
+  /* position: relative; */
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 4px aliceblue;
+  background-color: gold;
+  text-shadow: 2px 2px 4px blue;
+  animation: beat 2s ease-in-out infinite;
+   }
+   @keyframes beat {
+    0%{
+      transform: scale(4);
+    }
+    50%{
+      transform: scale(10);
+    }
+    100%{
+      transform: scale(20);
+    }
+   }
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="root">
+      <div class="loder-wrapper">
+        <div class="llogo">SA</div>
+      </div>
+    </div>
+
+    
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

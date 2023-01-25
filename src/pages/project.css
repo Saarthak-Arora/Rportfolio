@@ -2,10 +2,10 @@
    
     width: 70%;
     margin: auto;
-    height: 55vh;
     background-color:black;
+    height: 55vh;
     box-shadow: 2px 4px 3px 1px goldenrod;
-    margin-top:1% ;
+    margin-top:2% ;
 
 }
 
@@ -14,6 +14,7 @@
     display: flex;
     background-color: orange;
     height: 55vh;
+    overflow:auto;
 }
 button{
     width: 100px;
@@ -29,14 +30,14 @@ button{
 
 .left img{
     height: 100%; 
-}
+} 
 
 
 
-.right h5{
+ .right h5{
     padding: 2%;
     text-align: left;
-}
+} 
 
 .hands{
     font-size: 800px;
@@ -77,6 +78,11 @@ button{
     .hands{
         font-size: 300px;
         height: 300px;
+        position: absolute;
+        width: 100%;
+        left:0;
+        margin-top:-2% ;
+        
         
     }
    

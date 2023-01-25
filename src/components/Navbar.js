@@ -29,24 +29,24 @@ const Navbar = () => {
         <ul className={active ? 'ul-item' : 'ul-item_oicon'} >
             <li>
                
-                <Link to='/'><IOIcons.IoIosHome className='icon'/><h1>Home</h1></Link>
+                <Link to='/'><IOIcons.IoIosHome className='icon'/><h1  onClick={activateNav}>Home</h1></Link>
             </li>
         
             <li>
                 
-                <Link to='src/pages/Projects'><IOIcons.IoMdRocket className='icon'/><h1>Projects</h1></Link>
+                <Link to='src/pages/Projects' ><IOIcons.IoMdRocket className='icon'/><h1  onClick={activateNav}>Projects</h1></Link>
             </li>
             <li>
                 
-                <Link to='src/pages/Skills'><IOIcons.IoMdSettings className='icon'/><h1>Skills</h1></Link>
+                <Link to='src/pages/Skills' ><IOIcons.IoMdSettings className='icon'/><h1  onClick={activateNav}>Skills</h1></Link>
             </li>
             <li>
                 
-                <Link to='src/pages/Resume'><IOIcons.IoMdDocument className='icon'/><h1>Resume</h1></Link>
+                <Link to='src/pages/Resume' ><IOIcons.IoMdDocument className='icon'/><h1  onClick={activateNav}>Resume</h1></Link>
 
             </li>
             <li>
-                <Link to='src/pages/Contact'><FaHandshake className='icon'/><h1>Connect With Me</h1></Link>
+                <Link to='src/pages/Contact' ><FaHandshake className='icon'/><h1  onClick={activateNav}>Connect With Me</h1></Link>
             </li>    
           
         </ul>
