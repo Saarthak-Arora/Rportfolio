@@ -1,47 +1,92 @@
-.con{
-   
-    width: 70%;
+.containerP {
+    width: 80%;
     margin: auto;
-    background-color:black;
-    height: 55vh;
-    box-shadow: 2px 4px 3px 1px goldenrod;
-    margin-top:2% ;
-
-}
-
-
-.wrapper{
+    height: 70%;
+    margin-top:0.5% ;
+  }
+.cards-container {
     display: flex;
-    background-color: orange;
-    height: 55vh;
-    overflow:auto;
+    border-radius: 6px;
+    color: #333;
+    background: orange;
+    padding: 1rem;
+    box-shadow: 0 0 1rem #000 inset;
+    overflow-x: auto;
+    position: relative;
+    
+  }
+  
+  .card {
+    flex: 1 0 250px;
+    box-shadow: 0 1px 1rem -4px #000;
+    background: #fff;
+    margin: 1rem;
+    overflow: hidden;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+  }
+    .Pimg {
+      width: 100%;
+      height: 250px;
+      object-fit: center;
+    }
+    
+.card:hover {
+      box-shadow: 0 4px 1rem -4px #000;
+      transform: translateY(-3px);
 }
-button{
+.container::-webkit-scrollbar {
+        display: none;
+}
+  
+  .card-content {
+    padding: 1rem;
+  }
+
+  .card-content p{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .pwr{
+
+    justify-content: space-around;
+    
+  }
+  .card-content p button{
     width: 100px;
-    height: 50px;
-    background-color: orange;
-}
-.left{
-    flex: 1;
-}
-.right{
-    flex:1;
-}
+    margin: 4px;
+    font-size: 14px;
+    background: orange;
+    transition: .4s;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .card-content p button:hover{
+    box-shadow: none;
+  }
 
-.left img{
-    height: 100%; 
-} 
+  
+  @media screen and (max-width: 625px) {
+    .containerP {
+      width: 100%;
+      margin-top:20%;
+    }
+    
+    .cards-container {
+      padding: .5rem;
+    }
+    
+    .card {
+      margin: .5rem;
+    }
+  }
 
 
-
- .right h5{
-    padding: 2%;
-    text-align: left;
-} 
 
 .hands{
-    font-size: 800px;
-    height: 300px;
+    font-size: 600px;
+    height: 200px;
     
 }
 
@@ -55,25 +100,24 @@ button{
 }
 
 @media only screen and (max-width: 1311px){
-    .con{
-        width: 100vw;
-        height: auto;
-    }
-    .wrapper{
-        display: flex;
-        background-color: orange;
-        width: 100%;
-        height: 95%;
+   
+    .wrapper1{
+        margin-top:10%;
+        /* width: 100%; */
         flex-direction: column;
         overflow: auto;
+        position: relative;
+        left:0;
+        /* margin-right:0 ; */
     }
+    
     .right{
-        font-size: 30px;
+        font-size: 25px;
     }
     .wrapper button{
         height: 50px;
         width: 200px;
-        font-size: 30px;
+        font-size: 25px;
     }
     .hands{
         font-size: 300px;

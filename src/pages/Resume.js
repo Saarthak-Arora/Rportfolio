@@ -1,6 +1,6 @@
 import React from "react";
-import resume from "./resume.png";
-import ResumeVideo from './ResumeVideo.mp4';
+import resume from "../ImageAssets/resume.png";
+import ResumeVideo from '../ImageAssets/ResumeVideo.mp4';
 import "./Resume.css";
 
 
@@ -12,10 +12,14 @@ const Resume = () => {
       <div className="left">
       <video className="video" src={ResumeVideo} width="750" height="500" controls>
      </video>
-     <button>DownLoad Resume</button>
+     {/* <button>DownLoad Resume</button> */}
       </div>
+      <div className="rightr">
+        <div className="rfile">
         <img className="resume" src={resume} alt="" />
-      <div className="right"></div>
+
+        </div>
+      </div>
       </div>
     </>
   );

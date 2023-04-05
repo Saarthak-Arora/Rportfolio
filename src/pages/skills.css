@@ -1,8 +1,11 @@
 .container{
-    display: flex;
     margin: auto;
-    /* background-color: aqua; */
     width: 60vw;
+    display: flex;
+    margin-top:5% ;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 2px solid orange;
+    /* box-shadow: 0 0 1rem #000 inset; */
     
 }
 .left{
@@ -10,20 +13,23 @@
     /* background-color: aliceblue; */
     
 }
-.right{
+.right1{
     flex:1;
-    /* background-color: black; */
+    background-color: black;
 }
 
 .skills{
-    display: flex;
+    width: 100%;
+    /* position: absolute; */
+    /* display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
 }
 .skills img{
     width: 100px;
     height: 100px;
     margin: 20px;
+    transition: 0.4s;
 }
 
 .skills img:hover{
@@ -31,7 +37,12 @@
 }
 
 .stimg{
-    min-height: 100px; 
+    /* position: static; */
+    position: absolute;
+    min-width: 400px;
+    min-height: 400px; 
+    max-height: 500px;
+    transition: all;
     animation: disp 12s ease-in-out infinite alternate ;
     
 }
@@ -40,7 +51,7 @@
 @keyframes disp {
     20%{transform: translateX(-50px);}
     75%{transform: translateX(50px);}
-    100%{height: 200px;}
+    100%{height: 600px;}
 
 }
 
@@ -50,13 +61,14 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 1311px) {
     .container{
-        flex-direction: column;
-        left: 0;
-        position: absolute;
-    
+    width: 95%;
+    flex-direction: column;
+    margin-top: 10%;
+    /* background-color: black; */
     }
     .stimg{
         width: 300px;
+        position: relative;
         min-height: 300px; 
         animation: disp 12s ease-in-out infinite alternate ;
         
@@ -67,17 +79,20 @@
         100%{height: 100px;}
     
     }
-  
-    .right{
-        width: 100vw;
+    
+    .skills{
+
+       flex-direction: row;
+       /* position: relative; */
     }
     
     
     
 
     .skills img{
-        width: 300px;
-        height: 300px;
+        /* display: none; */
+        width: 200px;
+        height: 200px;
     }
 }
 

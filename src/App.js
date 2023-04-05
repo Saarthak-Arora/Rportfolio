@@ -5,17 +5,17 @@ import Projects from './pages/Projects';
 import './App.css';
 import Skills from './pages/Skills';
 import Resume from './pages/Resume';
+import   React  from 'react';
 function App() {
+  
+ 
   return (
     
    <>
     
-      
-    <Navbar/>
-    {/* <Home/>
-    <Projects/>
-    <Skills/>
-    <Resume/> */}
+   <Navbar/>
+
+    
    </>
   );
 }

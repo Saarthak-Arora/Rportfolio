@@ -1,17 +1,25 @@
 import React,{useState} from 'react';
-// import { GiSkills } from "react-icons/gi";
 import * as IOIcons from 'react-icons/io';
 import {FaHandshake} from 'react-icons/fa';
 import './Navbar.css';
-import Home from '../pages/Home';
 import { Link,Route,Routes  } from 'react-router-dom'
 import Projects from '../pages/Projects';
 import Skills from '../pages/Skills';
 import Resume from '../pages/Resume';
 import Contact from '../pages/Contact';
+import HomeContent from '../pages/HomeContent';
 
 
 const Navbar = () => {
+   
+    const scrollTop = () =>
+{
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+
     const [active,SetActive] = useState(false);
 
     const activateNav = () =>{
@@ -29,31 +37,31 @@ const Navbar = () => {
         <ul className={active ? 'ul-item' : 'ul-item_oicon'} >
             <li>
                
-                <Link to='/'><IOIcons.IoIosHome className='icon'/><h1  onClick={activateNav}>Home</h1></Link>
+                <Link to='/' onClick={scrollTop}><IOIcons.IoIosHome className='icon'/><h1  onClick={activateNav}>Home</h1></Link>
             </li>
         
             <li>
                 
-                <Link to='src/pages/Projects' ><IOIcons.IoMdRocket className='icon'/><h1  onClick={activateNav}>Projects</h1></Link>
+                <Link to='src/pages/Projects' onClick={scrollTop} ><IOIcons.IoMdRocket className='icon'/><h1  onClick={activateNav}>Projects</h1></Link>
             </li>
             <li>
                 
-                <Link to='src/pages/Skills' ><IOIcons.IoMdSettings className='icon'/><h1  onClick={activateNav}>Skills</h1></Link>
+                <Link to='src/pages/Skills' onClick={scrollTop} ><IOIcons.IoMdSettings className='icon'/><h1  onClick={activateNav}>Skills</h1></Link>
             </li>
             <li>
                 
-                <Link to='src/pages/Resume' ><IOIcons.IoMdDocument className='icon'/><h1  onClick={activateNav}>Resume</h1></Link>
+                <Link to='src/pages/Resume' onClick={scrollTop}><IOIcons.IoMdDocument className='icon'/><h1  onClick={activateNav}>Resume</h1></Link>
 
             </li>
             <li>
-                <Link to='src/pages/Contact' ><FaHandshake className='icon'/><h1  onClick={activateNav}>Connect With Me</h1></Link>
+                <Link to='src/pages/Contact' onClick={scrollTop} ><FaHandshake className='icon'/><h1  onClick={activateNav}>Connect With Me</h1></Link>
             </li>    
           
         </ul>
     </nav>
 </div>
- <Routes>
-        <Route path='/' element={<Home/>}/>
+ <Routes >
+        <Route path='' element={<HomeContent/>}/>
        <Route path='src/pages/Projects' element={<Projects/>}/>
        <Route path='src/pages/Skills' element={<Skills/>}/>
        <Route path='src/pages/Resume' element={<Resume/>}/>

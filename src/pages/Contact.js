@@ -1,6 +1,7 @@
 import React,{useState,useRef} from 'react';
 import emailjs from '@emailjs/browser';
 import './Contact.css'
+import thank from '../ImageAssets/ThankingImage.png'
 
 import {AiFillGithub,AiFillLinkedin} from "react-icons/ai/index";
 
@@ -18,8 +19,8 @@ const Contact = () => {
         const name = e.target.name;
         const value = e.target.value;
 
-        console.log(name);
-        console.log(value);
+        // console.log(name);
+        // console.log(value);
 
         setudetails(udetails => ({...udetails,[name] : value}));
 
@@ -68,10 +69,10 @@ const Contact = () => {
             </form>
         </div>
             <div className='right'>
-                <div className='rwrapper'>
+               
                 {/* <FaPrayingHands className='sicon'/> */}
-                <img src={'https://cdn-icons-png.flaticon.com/512/4786/4786795.png'} alt=""/>
-                </div>
+                <img src={thank} alt=""/>
+             
             </div>
     </div>
     </>
