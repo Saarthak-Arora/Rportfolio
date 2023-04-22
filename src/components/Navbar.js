@@ -61,7 +61,7 @@ const Navbar = () => {
     </nav>
 </div>
  <Routes >
-        <Route path='' element={<HomeContent/>}/>
+        <Route path='/' element={<HomeContent/>}/>
        <Route path='src/pages/Projects' element={<Projects/>}/>
        <Route path='src/pages/Skills' element={<Skills/>}/>
        <Route path='src/pages/Resume' element={<Resume/>}/>

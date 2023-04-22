@@ -47,6 +47,13 @@
     
 }
 
+.baseS{
+    margin-top:8%;
+    margin-left: 27%;
+    position: absolute;
+    opacity: 0.1;
+  }
+
 
 @keyframes disp {
     20%{transform: translateX(-50px);}
@@ -94,5 +101,12 @@
         width: 200px;
         height: 200px;
     }
+
+    .baseS{
+        margin-top:8%;
+        opacity: 0.1;
+        position:absolute;
+       margin-left: -0.5px;
+      }
 }
 

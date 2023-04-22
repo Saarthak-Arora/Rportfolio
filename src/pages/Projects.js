@@ -9,19 +9,22 @@ import ProjectsData from "../Data/ProjectData";
 const Projects = () => {
   return (
     <>
+    
+   
     <div className="containerP">
       <div className="cards-container">
 
       {
         ProjectsData.map((val)=>{
-          return (<div className="card">
+          return (
+            <div className="card">
           <img className='Pimg' src={val.img} alt="Image" />
           <div className="card-content">
-            <h2>{val.ProjectName}</h2>
+            <h4>{val.ProjectName}</h4>
             <p>
               {/* <a target={'__blank'} href={val.docLink}><button>Document</button></a> */}
               <a target={'__blank'} href={val.gitLink}><button>Source Code</button></a>
-              <a target={'__blank'} href={val.liveLink}><button>Live Link</button></a>
+              <a target={'__blank'} href={val.livLink}><button>Live Link</button></a>
             </p>
           </div>
         </div>
@@ -35,6 +38,7 @@ const Projects = () => {
       <div className="conh">
         <FaHands className="hands" />
       </div> 
+     <div className="base"> <h1>प्रभु की कृपा भयउ सब काजू, जनम हमार सुफल भा आजू</h1></div>
     </>
   );
 };
