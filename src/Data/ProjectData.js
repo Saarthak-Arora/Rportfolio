@@ -1,7 +1,8 @@
 import p1 from '../ImageAssets/NewsWalaPic.png';
-import p2 from '../ImageAssets/PuzzleGame.png';
-import p3 from '../ImageAssets/MemoLink.png';
-import p4 from '../ImageAssets/ComingSoon.webp';
+import p2 from '../ImageAssets/ShortestPathViz.png'
+import p3 from '../ImageAssets/PuzzleGame.png';
+import p4 from '../ImageAssets/MemoLink.png';
+import p5 from '../ImageAssets/ComingSoon.webp';
 
 const ProjectsData = [
     {
@@ -13,8 +14,16 @@ const ProjectsData = [
 
     },
     {
-        ProjectName : 'VideoCamPuzzle',
+        ProjectName : 'Shortest Path Visualizer',
         img : p2,
+        gitLink : 'https://github.com/Saarthak-Arora/ShortestPathVizualizer',
+        docLink : '',
+        livLink : 'https://saarthak-arora.github.io/ShortestPathVizualizer',
+
+    },
+    {
+        ProjectName : 'VideoCamPuzzle',
+        img : p3,
         gitLink : 'https://github.com/Saarthak-Arora/VideoCamPuzzleGame',
         docLink : '',
         livLink : 'https://saarthak-arora.github.io/VideoCamPuzzleGame',
@@ -22,7 +31,7 @@ const ProjectsData = [
     },
     {
         ProjectName : 'MemoLink',
-        img : p3,
+        img : p4,
         gitLink : 'https://github.com/Saarthak-Arora/MemoryLinkGame',
         docLink : '',
         livLink : 'https://saarthak-arora.github.io/MemoryLinkGame',
@@ -30,7 +39,7 @@ const ProjectsData = [
     },
     {
         ProjectName : 'Ecommerce(Backend Ready)',
-        img : p4,
+        img : p5,
         gitLink : '',
         docLink : '',
         livLink : '',

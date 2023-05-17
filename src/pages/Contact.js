@@ -7,6 +7,9 @@ import {AiFillGithub,AiFillLinkedin} from "react-icons/ai/index";
 
 const Contact = () => {
     const form = useRef();
+    const [mess, setmess] = useState(false);
+    const [mess1, setmess1] = useState(false);
+
 
     const [udetails, setudetails] = useState({
         uname : '',
@@ -32,9 +35,17 @@ const Contact = () => {
 
     emailjs.sendForm('service_fm625yh', 'template_37vita9', form.current, 'V_1SH95GpBTTJ9bET')
       .then((result) => {
-          console.log(result.text);
+        setmess(true);
+        setTimeout(()=>{
+          setmess(false);
+        },2000);
+          // console.log(result.text);
       }, (error) => {
-          console.log(error.text);
+        setmess1(true);
+        setTimeout(()=>{
+          setmess1(false);
+        },2000);
+        // console.log(error.text);
       });
       
       setudetails({uname : '',
@@ -45,6 +56,8 @@ const Contact = () => {
   return (
    
     <>
+   {mess == true?<div className='mess'>Sended</div>:''} 
+   {mess1 == true?<div className='mess1'>Error</div>:''} 
     <div className='contain'>
         <div className='cwrapper'>
             <form ref={form} onSubmit={handleSubmit}>
