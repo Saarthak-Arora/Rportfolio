@@ -19,7 +19,7 @@ const Skills = () => {
     </div>         
     </div>  
     <div className='right1'>
-    <div className='skills'>
+    <div className='skills1'>
     
         <img alt='' src='https://upload.wikimedia.org/wikipedia/commons/4/41/DSA_Logo.png'/> 
         <img alt='' src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/64px-ISO_C%2B%2B_Logo.svg.png'/>

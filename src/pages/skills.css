@@ -18,21 +18,21 @@
     background-color: black;
 }
 
-.skills{
+.skills1{
     width: 100%;
     /* position: absolute; */
     /* display: flex;
     justify-content: space-around;
     flex-wrap: wrap; */
 }
-.skills img{
+.skills1 img{
     width: 100px;
     height: 100px;
     margin: 20px;
     transition: 0.4s;
 }
 
-.skills img:hover{
+.skills1 img:hover{
    box-shadow: 4px 5px 6px 7px orange;
 }
 
@@ -46,6 +46,8 @@
     animation: disp 12s ease-in-out infinite alternate ;
     
 }
+
+
 
 .baseS{
     margin-top:8%;

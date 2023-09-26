@@ -37,7 +37,7 @@ const Navbar = () => {
         <ul className={active ? 'ul-item' : 'ul-item_oicon'} >
             <li>
                
-                <Link to='/' onClick={scrollTop}><IOIcons.IoIosHome className='icon'/><h1  onClick={activateNav}>Home</h1></Link>
+                <Link to='/Rportfolio' onClick={scrollTop}><IOIcons.IoIosHome className='icon'/><h1  onClick={activateNav}>Home</h1></Link>
             </li>
         
             <li>
@@ -48,11 +48,11 @@ const Navbar = () => {
                 
                 <Link to='src/pages/Skills' onClick={scrollTop} ><IOIcons.IoMdSettings className='icon'/><h1  onClick={activateNav}>Skills</h1></Link>
             </li>
-            <li>
+            {/* <li>
                 
                 <Link to='src/pages/Resume' onClick={scrollTop}><IOIcons.IoMdDocument className='icon'/><h1  onClick={activateNav}>Resume</h1></Link>
 
-            </li>
+            </li> */}
             <li>
                 <Link to='src/pages/Contact' onClick={scrollTop} ><FaHandshake className='icon'/><h1  onClick={activateNav}>Connect With Me</h1></Link>
             </li>    
@@ -61,7 +61,7 @@ const Navbar = () => {
     </nav>
 </div>
  <Routes >
-        <Route path='/' element={<HomeContent/>}/>
+        <Route path='/Rportfolio' element={<HomeContent/>}/>
        <Route path='src/pages/Projects' element={<Projects/>}/>
        <Route path='src/pages/Skills' element={<Skills/>}/>
        <Route path='src/pages/Resume' element={<Resume/>}/>
